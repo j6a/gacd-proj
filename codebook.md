@@ -111,58 +111,137 @@ https://github.com/j6a/gacd-proj/blob/master/README.md
 
   Variable:		X_train  
   Class:		"data.frame"  
-  Dimensions:	7352 obs. of 561 variables  
+  Dimensions:	7352 obs. of 561 variables
+  Variables:    "Numeric"  
   Comments:		Dataframe created from "X_train.txt" from the supplied dataset.  
-				Contains the feature measurements
+				Contains the feature measurements (See features_info.txt and features.txt listings below)  
 				
   Variable:		y_train  
   Class:		"data.frame"  
-  Dimensions:	7352 obs. of 1 variables  
+  Dimensions:	7352 obs. of 1 variable  
+  Variables:    "Numeric"  
   Comments:		Dataframe created from "y_train.txt" from the supplied dataset.  
 				Contains the activity ID 1-6 for each measurement  
 
   Variable:		subject_train  
   Class:		"data.frame"  
-  Dimensions:	7352 obs. of 1 variables  
+  Dimensions:	7352 obs. of 1 variable 
+  Variables:    "Numeric"    
   Comments:		Dataframe created from "subject_train.txt" from the supplied dataset.  
 				Contains the subject number 1-30 for each measurement  
 
   Variable:		training_data  
   Class:		"data.frame"  
   Dimensions:	7352 obs. of 563 variables  
+  Variables:    "Numeric"  
   Comments:		Dataframe created by merging the columns of X_train, y_train, subject_train  
 
   Variable:		X_test  
   Class:		"data.frame"  
   Dimensions:	7352 obs. of 561 variables  
+  Variables:    "Numeric"  
   Comments:		Dataframe created from "X_test.txt" from the supplied dataset.  
-				Contains the feature measurements  
+				Contains the feature measurements  (See features_info.txt and features.txt listings below)  
 				
   Variable:		y_test  
   Class:		"data.frame"  
-  Dimensions:	7352 obs. of 1 variables  
+  Dimensions:	7352 obs. of 1 variable  
+  Variables:    "Numeric"  
   Comments:		Dataframe created from "y_test.txt" from the supplied dataset.  
   				Contains the activity ID 1-6 for each measurement  
 				
   Variable:		subject_test  
   Class:		"data.frame"  
-  Dimensions:	7352 obs. of 1 variables  
+  Dimensions:	7352 obs. of 1 variable  
+  Variables:    "Numeric"  
   Comments:		Dataframe created from "subject_test.txt" from the supplied dataset.  
 				Contains the subject number 1-30 for each measurement  
 				
   Variable:		test_data  
   Class:		"data.frame"  
   Dimensions:	7352 obs. of 563 variables  
+  Variables:    "Numeric"  
   Comments:		Dataframe created by merging the columns of X_test, y_test, subject_test  
 
   Variable:		data1  
   Class:		"data.frame"  
   Dimensions:	10299 obs. of 563 variables  
+  Variables:    "Numeric" )
   Comments:		Dataframe created by merging the rows of training_data and test_data.  
 
   Variable:		data2  
   Class:		"data.frame"  
   Dimensions:	10299 obs. of 68 variables  
+  Variables:    
+				 $ subject 					  : num   
+				 $ activity                   : Factor w/ 6 levels 
+				 $ tBodyAcc-mean()-X          : num  
+				 $ tBodyAcc-mean()-Y          : num  
+				 $ tBodyAcc-mean()-Z          : num  
+				 $ tBodyAcc-std()-X           : num  
+				 $ tBodyAcc-std()-Y           : num  
+				 $ tBodyAcc-std()-Z           : num  
+				 $ tGravityAcc-mean()-X       : num  
+				 $ tGravityAcc-mean()-Y       : num  
+				 $ tGravityAcc-mean()-Z       : num  
+				 $ tGravityAcc-std()-X        : num  
+				 $ tGravityAcc-std()-Y        : num  
+				 $ tGravityAcc-std()-Z        : num  
+				 $ tBodyAccJerk-mean()-X      : num  
+				 $ tBodyAccJerk-mean()-Y      : num  
+				 $ tBodyAccJerk-mean()-Z      : num  
+				 $ tBodyAccJerk-std()-X       : num  
+				 $ tBodyAccJerk-std()-Y       : num  
+				 $ tBodyAccJerk-std()-Z       : num  
+				 $ tBodyGyro-mean()-X         : num  
+				 $ tBodyGyro-mean()-Y         : num  
+				 $ tBodyGyro-mean()-Z         : num  
+				 $ tBodyGyro-std()-X          : num  
+				 $ tBodyGyro-std()-Y          : num  
+				 $ tBodyGyro-std()-Z          : num  
+				 $ tBodyGyroJerk-mean()-X     : num  
+				 $ tBodyGyroJerk-mean()-Y     : num  
+				 $ tBodyGyroJerk-mean()-Z     : num  
+				 $ tBodyGyroJerk-std()-X      : num  
+				 $ tBodyGyroJerk-std()-Y      : num  
+				 $ tBodyGyroJerk-std()-Z      : num  
+				 $ tBodyAccMag-mean()         : num  
+				 $ tBodyAccMag-std()          : num  
+				 $ tGravityAccMag-mean()      : num  
+				 $ tGravityAccMag-std()       : num  
+				 $ tBodyAccJerkMag-mean()     : num  
+				 $ tBodyAccJerkMag-std()      : num  
+				 $ tBodyGyroMag-mean()        : num  
+				 $ tBodyGyroMag-std()         : num  
+				 $ tBodyGyroJerkMag-mean()    : num  
+				 $ tBodyGyroJerkMag-std()     : num  
+				 $ fBodyAcc-mean()-X          : num  
+				 $ fBodyAcc-mean()-Y          : num  
+				 $ fBodyAcc-mean()-Z          : num  
+				 $ fBodyAcc-std()-X           : num  
+				 $ fBodyAcc-std()-Y           : num  
+				 $ fBodyAcc-std()-Z           : num  
+				 $ fBodyAccJerk-mean()-X      : num  
+				 $ fBodyAccJerk-mean()-Y      : num  
+				 $ fBodyAccJerk-mean()-Z      : num  
+				 $ fBodyAccJerk-std()-X       : num  
+				 $ fBodyAccJerk-std()-Y       : num  
+				 $ fBodyAccJerk-std()-Z       : num  
+				 $ fBodyGyro-mean()-X         : num  
+				 $ fBodyGyro-mean()-Y         : num  
+				 $ fBodyGyro-mean()-Z         : num  
+				 $ fBodyGyro-std()-X          : num  
+				 $ fBodyGyro-std()-Y          : num  
+				 $ fBodyGyro-std()-Z          : num  
+				 $ fBodyAccMag-mean()         : num  
+				 $ fBodyAccMag-std()          : num  
+				 $ fBodyBodyAccJerkMag-mean() : num  
+				 $ fBodyBodyAccJerkMag-std()  : num  
+				 $ fBodyBodyGyroMag-mean()    : num  
+				 $ fBodyBodyGyroMag-std()     : num  
+				 $ fBodyBodyGyroJerkMag-mean(): num  
+				 $ fBodyBodyGyroJerkMag-std() : num  
+ 
   Comments:		Dataframe created by selecting only the columns that contain mean() and  
 				standard deviation from data1.  
 				
@@ -196,7 +275,7 @@ https://github.com/j6a/gacd-proj/blob/master/README.md
 				calculating the mean for each combination.  
 				There are 30 subjects, that each perform all 6 of the activities,   
 				so this data frame has 180 observations.  
-				The forst 2 columns are the subject and activity, and the remaining  
+				The first 2 columns are the subject and activity, and the remaining  
 				66 columns are the mean() and std() feature measurements from the   
 				supplied dataset.  
 				
