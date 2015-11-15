@@ -26,9 +26,11 @@ View(tidydata)
 # Line-by-line description of the script
  
 **Line 22:** 	Loads the dplyr package which is required for the script to function.
-				The "dplyr" package needs to be installed first using:  
-						`install.packages("dplyr")`
-						
+				The "dplyr" package needs to be installed first using:
+				
+				```R
+				install.packages("dplyr")
+				```
 						
 **Line 28-32:**	This section will download the dataset ZIP file form the given URL and
 				save it to the working directory (if it doesnt exist already)
@@ -60,8 +62,7 @@ View(tidydata)
 **Line 73-74:**	Meaningful column names are given to the forst two columns, 
 				i.e. Subject, and Activity.
 			
-## Part 2 -	Extracts only the measurements on the mean and standard deviation for
-##			each measurement.
+## Part 2 -	Extracts only the measurements on the mean and standard deviation for each measurement.
 			
 **Line 83:**	A new data frame "data2" is created by selecting only the measurements
 				on the mean and standard deviation from the large dataset "data1".
@@ -82,38 +83,38 @@ View(tidydata)
 				read.table() function.
 				This file contained text labels for the 6 activities that were part
 				of the data collection process:
-				1 WALKING
-				2 WALKING_UPSTAIRS
-				3 WALKING_DOWNSTAIRS
-				4 SITTING
-				5 STANDING
-				6 LAYING
+				- 1 WALKING
+				- 2 WALKING_UPSTAIRS
+				- 3 WALKING_DOWNSTAIRS
+				- 4 SITTING
+				- 5 STANDING
+				- 6 LAYING
 			
 **Line 95:**	Using the factor() function, the activity column (which contained the
-				numbers 1-6 corresponding to the activity) were replaced with a factor
-				variable, with levels 1-6, and labels as per activity_labels.txt
+				numbers 1-6 corresponding to the activity) were cast to a factor
+				variable, with levels 1-6, and labels as per "activity_labels.txt"
 			
 			
 ## Part 4 - Appropriately labels the data set with descriptive variable names. 
 
-*NOTE:		This question left it quote open as to how to label the columns of the data.
+			NOTE: This question left it quote open as to how to label the columns of the data.
 			The definition of "descriptive" is very subjective!
 		
 			To keep things simple, I have used the descriptions of the features given
 			as a part of the supplied dataset in the file features.txt
 		
-			*Please keep in mind when you mark this assignment that your definition
-			of descriptive could well be different to mine :-)*
+			Please keep in mind when you mark this assignment that your definition
+			of descriptive could well be different to mine :-)
 		
 			I worked off the assumption that if the feature descriptions were good 
 			enough to be supplied with the dataset, then they are good enough to be
 			used in my analysis.
 		
 			More importantly, by using these descriptive names, I do not have to supply
-			additional documentation descibing my new naming convention.*
+			additional documentation descibing my new naming convention.
 		
 
-**Line 103:** 	Read the features.txt file into a data frame "features" using the
+**Line 103:** 	Read the "features.txt" file into a data frame "features" using the
 				read.table() function.
 
 **Line 106:**	Using the dplyr slice function, the "features" data frame was modified to
@@ -125,17 +126,16 @@ View(tidydata)
 		
 
 
-## Part 5 - From the data set in step 4, creates a second, independent tidy data set
-##			with the average of each variable for each activity and each subject. 
+## Part 5 - From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
 
-**Line 119:**	Making use of the dplyr group_by(), summarise_each(), and the chain
-				operator %>%, the following line of code was used to create a data 
+**Line 119:**	Making use of the dplyr functions group_by() and summarise_each(), and
+				the chain operator %>%, the following line of code was used to create a data 
 				frame "data3" that contained the summary mean() statistic for each
 				measurement, grouped by 2 variables, namely subject and activity.
 			
-				```R
-				data3 <- data2 %>% group_by(subject,activity) %>% summarise_each(funs(mean))
-				```
+```R
+data3 <- data2 %>% group_by(subject,activity) %>% summarise_each(funs(mean))
+```
 			
 **Line 122:**	Write the resultant data set to a TXT file "tidydata.txt". This creates
 				the text file that is required to be submitted on the Coursera website.
