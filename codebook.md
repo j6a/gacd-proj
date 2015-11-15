@@ -31,11 +31,11 @@ https://github.com/j6a/gacd-proj/blob/master/README.md
 
 ##Variables created in the run_analysis.R script
 
-  Variable:     fileUrl  
-  Class:        "character"  
-  Dimensions:   NULL  
-  Comments:     Character string used to hold the URL for the download of the raw data.  
-                "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+  Variable:		fileUrl  
+  Class:		"character"  
+  Dimensions:	NULL  
+  Comments:		Character string used to hold the URL for the download of the raw data.  
+				"https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 
 Variable:		X_train
 Class:			"data.frame"
