@@ -344,12 +344,9 @@ https://github.com/j6a/gacd-proj/blob/master/README.md
 				 $ fBodyBodyGyroJerkMag-mean(): num  
 				 $ fBodyBodyGyroJerkMag-std() : num  
 
-  Comments:		Dataframe created by first grouping data 2 by subject and activity, then   
-				calculating the mean for each combination.  
-				There are 30 subjects, that each perform all 6 of the activities,   
-				so this data frame has 180 observations.  
-				The first 2 columns are the subject and activity, and the remaining  
-				66 columns are the mean() and std() feature measurements from the   
+  Comments:		Dataframe created by first grouping data 2 by subject and activity, then calculating the mean for each combination.  
+				There are 30 subjects, that each perform all 6 of the activities,   so this data frame has 180 observations.  
+				The first 2 columns are the subject and activity, and the remaining  66 columns are the mean() and std() feature measurements from the   
 				supplied dataset.  
 				
   
