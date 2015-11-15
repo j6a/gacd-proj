@@ -197,7 +197,7 @@ https://github.com/j6a/gacd-proj/blob/master/README.md
 				
   
 # Feature naming methodology  
-Source: Raw data set "features_info.txt", features.txt)
+Source: Raw data set "features_info.txt", features.txt
   
 
 ##Features_info.txt listing
@@ -259,12 +259,12 @@ tBodyGyroJerkMean
 The complete list of variables of each feature vector is in features.txt
 
 ## featues.txt listing				
-1 tBodyAcc-mean()-X
-2 tBodyAcc-mean()-Y
-3 tBodyAcc-mean()-Z
-4 tBodyAcc-std()-X
-5 tBodyAcc-std()-Y
-6 tBodyAcc-std()-Z
+1 tBodyAcc-mean()-X  
+2 tBodyAcc-mean()-Y  
+3 tBodyAcc-mean()-Z  
+4 tBodyAcc-std()-X  
+5 tBodyAcc-std()-Y  
+6 tBodyAcc-std()-Z  
 7 tBodyAcc-mad()-X
 8 tBodyAcc-mad()-Y
 9 tBodyAcc-mad()-Z
