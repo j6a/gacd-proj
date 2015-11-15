@@ -171,8 +171,13 @@ https://github.com/j6a/gacd-proj/blob/master/README.md
   Dimensions:	6 obs. of 2 variables  
   Comments:		Dataframe created from "activity_labels.txt" from the supplied dataset.  
 				Contains the description of each of the 6 activities in the experiment  
-				1 = WALKING, 2 = WALKING_UPSTAIRS, 3 = WALKING DOWNSTAIRS,   
-				4 = SITTING, 5 = STANDING, 6 = LAYING  
+				1 = WALKING   
+				2 = WALKING_UPSTAIRS  
+				3 = WALKING DOWNSTAIRS     
+				4 = SITTING  
+				5 = STANDING    
+				6 = LAYING  
+			
 				
   Variable:		features  
   Class:		"data.frame"  
