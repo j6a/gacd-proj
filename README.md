@@ -69,11 +69,11 @@ install.packages("dplyr")
 			
 *Looking in the features.txt file supplied in the dataset, the values that
 were selected were those that contained PREFIX-mean()-SUFFIX, or
-PREFIX-std()-SUFFIX.
+PREFIX-std()-SUFFIX.*
 			
-Note that the PREFIX-freqmean()-SUFFIX values were not selected.*
+*Note that the PREFIX-freqmean()-SUFFIX values were not selected.*
 
-Using this selection criteria, 66 of the 561 features were kept in the
+*Using this selection criteria, 66 of the 561 features were kept in the
 new dataset. The dataset has 68 columns, as it has Subject and Activity
 as the first 2 columns, plus the 66 selected feature measurements.*
 
@@ -98,19 +98,19 @@ as the first 2 columns, plus the 66 selected feature measurements.*
 ## Part 4 - Appropriately labels the data set with descriptive variable names. 
 
 *NOTE: This question left it quote open as to how to label the columns of the data.
-The definition of "descriptive" is very subjective!
+The definition of "descriptive" is very subjective!*
 		
-To keep things simple, I have used the descriptions of the features given
-as a part of the supplied dataset in the file features.txt
+*To keep things simple, I have used the descriptions of the features given
+as a part of the supplied dataset in the file features.txt*
 		
-Please keep in mind when you mark this assignment that your definition
-of descriptive could well be different to mine :-)
+*Please keep in mind when you mark this assignment that your definition
+of descriptive could well be different to mine :-)*
 		
-I worked off the assumption that if the feature descriptions were good 
+*I worked off the assumption that if the feature descriptions were good 
 enough to be supplied with the dataset, then they are good enough to be
-used in my analysis.
+used in my analysis.*
 		
-More importantly, by using these descriptive names, I do not have to supply
+*More importantly, by using these descriptive names, I do not have to supply
 additional documentation descibing my new naming convention.*
 		
 
