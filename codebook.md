@@ -112,7 +112,7 @@ https://github.com/j6a/gacd-proj/blob/master/README.md
   Variable:		X_train  
   Class:		"data.frame"  
   Dimensions:	7352 obs. of 561 variables
-  Variables:    "Numeric"  
+  Variables:    "Numeric" (See features.txt listing below for details of each variable)
   Comments:		Dataframe created from "X_train.txt" from the supplied dataset.  
 				Contains the feature measurements (See features_info.txt and features.txt listings below)  
 				
@@ -133,13 +133,14 @@ https://github.com/j6a/gacd-proj/blob/master/README.md
   Variable:		training_data  
   Class:		"data.frame"  
   Dimensions:	7352 obs. of 563 variables  
-  Variables:    "Numeric"  
+  Variables:    "Numeric" (See features.txt listing below for details of each variable) 
   Comments:		Dataframe created by merging the columns of X_train, y_train, subject_train  
+				First 2 columns contain y_train and subject_train data
 
   Variable:		X_test  
   Class:		"data.frame"  
   Dimensions:	7352 obs. of 561 variables  
-  Variables:    "Numeric"  
+  Variables:    "Numeric"  (See features.txt listing below for details of each variable)
   Comments:		Dataframe created from "X_test.txt" from the supplied dataset.  
 				Contains the feature measurements  (See features_info.txt and features.txt listings below)  
 				
@@ -162,11 +163,12 @@ https://github.com/j6a/gacd-proj/blob/master/README.md
   Dimensions:	7352 obs. of 563 variables  
   Variables:    "Numeric"  
   Comments:		Dataframe created by merging the columns of X_test, y_test, subject_test  
+				First 2 columns contain y_test and subject_test data  
 
   Variable:		data1  
   Class:		"data.frame"  
   Dimensions:	10299 obs. of 563 variables  
-  Variables:    "Numeric" )
+  Variables:    "Numeric" (See features.txt listing below for details of each variable)
   Comments:		Dataframe created by merging the rows of training_data and test_data.  
 
   Variable:		data2  
@@ -271,6 +273,77 @@ https://github.com/j6a/gacd-proj/blob/master/README.md
   Variable:		data3  
   Class:		"data.frame"  
   Dimensions:	180 obs. of 68 variables  
+  Variables:  
+  
+				 $ subject                    : num  
+				 $ activity                   : Factor w/ 6 levels "WALKING","WALKING_UPSTAIRS",..  
+				 $ tBodyAcc-mean()-X          : num  
+				 $ tBodyAcc-mean()-Y          : num  
+				 $ tBodyAcc-mean()-Z          : num  
+				 $ tBodyAcc-std()-X           : num  
+				 $ tBodyAcc-std()-Y           : num  
+				 $ tBodyAcc-std()-Z           : num  
+				 $ tGravityAcc-mean()-X       : num  
+				 $ tGravityAcc-mean()-Y       : num  
+				 $ tGravityAcc-mean()-Z       : num  
+				 $ tGravityAcc-std()-X        : num  
+				 $ tGravityAcc-std()-Y        : num  
+				 $ tGravityAcc-std()-Z        : num  
+				 $ tBodyAccJerk-mean()-X      : num  
+				 $ tBodyAccJerk-mean()-Y      : num  
+				 $ tBodyAccJerk-mean()-Z      : num  
+				 $ tBodyAccJerk-std()-X       : num  
+				 $ tBodyAccJerk-std()-Y       : num  
+				 $ tBodyAccJerk-std()-Z       : num  
+				 $ tBodyGyro-mean()-X         : num  
+				 $ tBodyGyro-mean()-Y         : num  
+				 $ tBodyGyro-mean()-Z         : num  
+				 $ tBodyGyro-std()-X          : num  
+				 $ tBodyGyro-std()-Y          : num  
+				 $ tBodyGyro-std()-Z          : num  
+				 $ tBodyGyroJerk-mean()-X     : num  
+				 $ tBodyGyroJerk-mean()-Y     : num  
+				 $ tBodyGyroJerk-mean()-Z     : num  
+				 $ tBodyGyroJerk-std()-X      : num  
+				 $ tBodyGyroJerk-std()-Y      : num  
+				 $ tBodyGyroJerk-std()-Z      : num  
+				 $ tBodyAccMag-mean()         : num  
+				 $ tBodyAccMag-std()          : num  
+				 $ tGravityAccMag-mean()      : num  
+				 $ tGravityAccMag-std()       : num  
+				 $ tBodyAccJerkMag-mean()     : num  
+				 $ tBodyAccJerkMag-std()      : num  
+				 $ tBodyGyroMag-mean()        : num  
+				 $ tBodyGyroMag-std()         : num  
+				 $ tBodyGyroJerkMag-mean()    : num  
+				 $ tBodyGyroJerkMag-std()     : num  
+				 $ fBodyAcc-mean()-X          : num  
+				 $ fBodyAcc-mean()-Y          : num  
+				 $ fBodyAcc-mean()-Z          : num  
+				 $ fBodyAcc-std()-X           : num  
+				 $ fBodyAcc-std()-Y           : num  
+				 $ fBodyAcc-std()-Z           : num  
+				 $ fBodyAccJerk-mean()-X      : num  
+				 $ fBodyAccJerk-mean()-Y      : num  
+				 $ fBodyAccJerk-mean()-Z      : num  
+				 $ fBodyAccJerk-std()-X       : num  
+				 $ fBodyAccJerk-std()-Y       : num  
+				 $ fBodyAccJerk-std()-Z       : num  
+				 $ fBodyGyro-mean()-X         : num  
+				 $ fBodyGyro-mean()-Y         : num  
+				 $ fBodyGyro-mean()-Z         : num  
+				 $ fBodyGyro-std()-X          : num  
+				 $ fBodyGyro-std()-Y          : num  
+				 $ fBodyGyro-std()-Z          : num  
+				 $ fBodyAccMag-mean()         : num  
+				 $ fBodyAccMag-std()          : num  
+				 $ fBodyBodyAccJerkMag-mean() : num  
+				 $ fBodyBodyAccJerkMag-std()  : num  
+				 $ fBodyBodyGyroMag-mean()    : num  
+				 $ fBodyBodyGyroMag-std()     : num  
+				 $ fBodyBodyGyroJerkMag-mean(): num  
+				 $ fBodyBodyGyroJerkMag-std() : num  
+
   Comments:		Dataframe created by first grouping data 2 by subject and activity, then   
 				calculating the mean for each combination.  
 				There are 30 subjects, that each perform all 6 of the activities,   
@@ -283,7 +356,6 @@ https://github.com/j6a/gacd-proj/blob/master/README.md
 # Feature naming methodology  
 Source: Raw data set "features_info.txt", features.txt
   
-
 ##Features_info.txt listing
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
