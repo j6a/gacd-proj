@@ -79,9 +79,9 @@ colnames(data1)[2] <- "activity"
 # --------------------------------------------------------------------------------------------------------------
 
 # This section subsets the data set to contain only the required features:
-
-data2 <- select(data1, subject, activity, V1:V6, V41:V46, V81:V86, V121:V126, V161:V166, V201:V202, V214:V215, V227:V228, V240:V241, 
-                V253:V254, V266:V271, V345:V350, V424:V429, V503:V504, V516:V517, V529:V530, V542:V543) 
+data2 <- select(data1, subject, activity, V1:V6, V41:V46, V81:V86, V121:V126, V161:V166, V201:V202, V214:V215,
+                V227:V228, V240:V241, V253:V254, V266:V271, V345:V350, V424:V429, V503:V504, V516:V517, 
+                V529:V530, V542:V543) 
 
 # --------------------------------------------------------------------------------------------------------------
 # Part 3 - Uses descriptive activity names to name the activities in the data set

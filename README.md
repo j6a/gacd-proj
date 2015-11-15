@@ -28,9 +28,9 @@ View(tidydata)
 **Line 22:** 	Loads the dplyr package which is required for the script to function.
 				The "dplyr" package needs to be installed first using:
 				
-				```R
-				install.packages("dplyr")
-				```
+```R
+install.packages("dplyr")
+```
 						
 **Line 28-32:**	This section will download the dataset ZIP file form the given URL and
 				save it to the working directory (if it doesnt exist already)
@@ -64,18 +64,18 @@ View(tidydata)
 			
 ## Part 2 -	Extracts only the measurements on the mean and standard deviation for each measurement.
 			
-**Line 83:**	A new data frame "data2" is created by selecting only the measurements
+**Line 82:**	A new data frame "data2" is created by selecting only the measurements
 				on the mean and standard deviation from the large dataset "data1".
 			
-				Looking in the features.txt file supplied in the dataset, the values that
-				were selected were those that contained PREFIX-mean()-SUFFIX, or
-				PREFIX-std()-SUFFIX.
+*Looking in the features.txt file supplied in the dataset, the values that
+were selected were those that contained PREFIX-mean()-SUFFIX, or
+PREFIX-std()-SUFFIX.
 			
-				*Note that the PREFIX-freqmean()-SUFFIX values were not selected.*
+Note that the PREFIX-freqmean()-SUFFIX values were not selected.*
 
-				Using this selection criteria, 66 of the 561 features were kept in the
-				new dataset. The dataset has 68 columns, as it has Subject and Activity
-				as the first 2 columns, plus the 66 selected feature measurements.
+Using this selection criteria, 66 of the 561 features were kept in the
+new dataset. The dataset has 68 columns, as it has Subject and Activity
+as the first 2 columns, plus the 66 selected feature measurements.*
 
 ## Part 3 -	Uses descriptive activity names to name the activities in the data set
 
@@ -83,12 +83,12 @@ View(tidydata)
 				read.table() function.
 				This file contained text labels for the 6 activities that were part
 				of the data collection process:
-				- 1 WALKING
-				- 2 WALKING_UPSTAIRS
-				- 3 WALKING_DOWNSTAIRS
-				- 4 SITTING
-				- 5 STANDING
-				- 6 LAYING
+- 1 WALKING
+- 2 WALKING_UPSTAIRS
+- 3 WALKING_DOWNSTAIRS
+- 4 SITTING
+- 5 STANDING
+- 6 LAYING
 			
 **Line 95:**	Using the factor() function, the activity column (which contained the
 				numbers 1-6 corresponding to the activity) were cast to a factor
@@ -97,21 +97,21 @@ View(tidydata)
 			
 ## Part 4 - Appropriately labels the data set with descriptive variable names. 
 
-			NOTE: This question left it quote open as to how to label the columns of the data.
-			The definition of "descriptive" is very subjective!
+*NOTE: This question left it quote open as to how to label the columns of the data.
+The definition of "descriptive" is very subjective!
 		
-			To keep things simple, I have used the descriptions of the features given
-			as a part of the supplied dataset in the file features.txt
+To keep things simple, I have used the descriptions of the features given
+as a part of the supplied dataset in the file features.txt
 		
-			Please keep in mind when you mark this assignment that your definition
-			of descriptive could well be different to mine :-)
+Please keep in mind when you mark this assignment that your definition
+of descriptive could well be different to mine :-)
 		
-			I worked off the assumption that if the feature descriptions were good 
-			enough to be supplied with the dataset, then they are good enough to be
-			used in my analysis.
+I worked off the assumption that if the feature descriptions were good 
+enough to be supplied with the dataset, then they are good enough to be
+used in my analysis.
 		
-			More importantly, by using these descriptive names, I do not have to supply
-			additional documentation descibing my new naming convention.
+More importantly, by using these descriptive names, I do not have to supply
+additional documentation descibing my new naming convention.*
 		
 
 **Line 103:** 	Read the "features.txt" file into a data frame "features" using the
