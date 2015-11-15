@@ -37,91 +37,91 @@ https://github.com/j6a/gacd-proj/blob/master/README.md
   Comments:		Character string used to hold the URL for the download of the raw data.  
 				"https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 
-Variable:		X_train
-Class:			"data.frame"
-Dimensions:		7352 obs. of 561 variables
-Comments:		Dataframe created from "X_train.txt" from the supplied dataset.
+  Variable:		X_train  
+  Class:		"data.frame"  
+  Dimensions:	7352 obs. of 561 variables  
+  Comments:		Dataframe created from "X_train.txt" from the supplied dataset.  
 				Contains the feature measurements
 				
-Variable:		y_train
-Class:			"data.frame"
-Dimensions:		7352 obs. of 1 variables
-Comments:		Dataframe created from "y_train.txt" from the supplied dataset.
-				Contains the activity ID 1-6 for each measurement
+  Variable:		y_train  
+  Class:		"data.frame"  
+  Dimensions:	7352 obs. of 1 variables  
+  Comments:		Dataframe created from "y_train.txt" from the supplied dataset.  
+				Contains the activity ID 1-6 for each measurement  
 
-Variable:		subject_train
-Class:			"data.frame"
-Dimensions:		7352 obs. of 1 variables
-Comments:		Dataframe created from "subject_train.txt" from the supplied dataset.
-				Contains the subject number 1-30 for each measurement
+  Variable:		subject_train  
+  Class:		"data.frame"  
+  Dimensions:	7352 obs. of 1 variables  
+  Comments:		Dataframe created from "subject_train.txt" from the supplied dataset.  
+				Contains the subject number 1-30 for each measurement  
 
-Variable:		training_data
-Class:			"data.frame"
-Dimensions:		7352 obs. of 563 variables
-Comments:		Dataframe created by merging the columns of X_train, y_train, subject_train
+  Variable:		training_data  
+  Class:		"data.frame"  
+  Dimensions:	7352 obs. of 563 variables  
+  Comments:		Dataframe created by merging the columns of X_train, y_train, subject_train  
 
-Variable:		X_test
-Class:			"data.frame"
-Dimensions:		7352 obs. of 561 variables
-Comments:		Dataframe created from "X_test.txt" from the supplied dataset.
-				Contains the feature measurements
+  Variable:		X_test  
+  Class:		"data.frame"  
+  Dimensions:	7352 obs. of 561 variables  
+  Comments:		Dataframe created from "X_test.txt" from the supplied dataset.  
+				Contains the feature measurements  
 				
-Variable:		y_test
-Class:			"data.frame"
-Dimensions:		7352 obs. of 1 variables
-Comments:		Dataframe created from "y_test.txt" from the supplied dataset.
-				Contains the activity ID 1-6 for each measurement
+  Variable:		y_test  
+  Class:		"data.frame"  
+  Dimensions:	7352 obs. of 1 variables  
+  Comments:		Dataframe created from "y_test.txt" from the supplied dataset.  
+  				Contains the activity ID 1-6 for each measurement  
 				
-Variable:		subject_test
-Class:			"data.frame"
-Dimensions:		7352 obs. of 1 variables
-Comments:		Dataframe created from "subject_test.txt" from the supplied dataset.
-				Contains the subject number 1-30 for each measurement
+  Variable:		subject_test  
+  Class:		"data.frame"  
+  Dimensions:	7352 obs. of 1 variables  
+  Comments:		Dataframe created from "subject_test.txt" from the supplied dataset.  
+				Contains the subject number 1-30 for each measurement  
 				
-Variable:		test_data
-Class:			"data.frame"
-Dimensions:		7352 obs. of 563 variables
-Comments:		Dataframe created by merging the columns of X_test, y_test, subject_test
+  Variable:		test_data  
+  Class:		"data.frame"  
+  Dimensions:	7352 obs. of 563 variables  
+  Comments:		Dataframe created by merging the columns of X_test, y_test, subject_test  
 
-Variable:		data1
-Class:			"data.frame"
-Dimensions:		10299 obs. of 563 variables
-Comments:		Dataframe created by merging the rows of training_data and test_data.
+  Variable:		data1  
+  Class:		"data.frame"  
+  Dimensions:	10299 obs. of 563 variables  
+  Comments:		Dataframe created by merging the rows of training_data and test_data.  
 
-Variable:		data2
-Class:			"data.frame"
-Dimensions:		10299 obs. of 68 variables
-Comments:		Dataframe created by selecting only the columns that contain mean() and
-				standard deviation from data1.
+  Variable:		data2  
+  Class:		"data.frame"  
+  Dimensions:	10299 obs. of 68 variables  
+  Comments:		Dataframe created by selecting only the columns that contain mean() and  
+				standard deviation from data1.  
 				
-Variable:		activity_labels
-Class:			"data.frame"
-Dimensions:		6 obs. of 2 variables
-Comments:		Dataframe created from "activity_labels.txt" from the supplied dataset.
-				Contains the description of each of the 6 activities in the experiment
-				1 = WALKING, 2 = WALKING_UPSTAIRS, 3 = WALKING DOWNSTAIRS, 
-				4 = SITTING, 5 = STANDING, 6 = LAYING
+  Variable:		activity_labels  
+  Class:		"data.frame"  
+  Dimensions:	6 obs. of 2 variables  
+  Comments:		Dataframe created from "activity_labels.txt" from the supplied dataset.  
+				Contains the description of each of the 6 activities in the experiment  
+				1 = WALKING, 2 = WALKING_UPSTAIRS, 3 = WALKING DOWNSTAIRS,   
+				4 = SITTING, 5 = STANDING, 6 = LAYING  
 				
-Variable:		features
-Class:			"data.frame"
-Dimensions:		561 obs. of 2 variables / 66 obs. of 2 variables
-Comments:		Dataframe created from "features.txt" form the supplied dataset.
-				Initially this variable contains the feature names for all 561
-				measured features.
-				Line 106 of the script then subsets this variable down to the
-				66 measurements that contain the mean() and std() of each
-				measurement.
+  Variable:		features  
+  Class:		"data.frame"  
+  Dimensions:	561 obs. of 2 variables / 66 obs. of 2 variables  
+  Comments:		Dataframe created from "features.txt" form the supplied dataset.  
+				Initially this variable contains the feature names for all 561  
+				measured features.  
+				Line 106 of the script then subsets this variable down to the  
+				66 measurements that contain the mean() and std() of each  
+				measurement.  
 
-Variable:		data3
-Class:			"data.frame"
-Dimensions:		180 obs. of 68 variables
-Comments:		Dataframe created by first grouping data 2 by subject and activity, then 
-				calculating the mean for each combination.
-				There are 30 subjects, that each perform all 6 of the activities, 
-				so this data frame has 180 observations.
-				The forst 2 columns are the subject and activity, and the remaining
-				66 columns are the mean() and std() feature measurements from the 
-				supplied dataset.
-				standard deviation from data1.
+  Variable:		data3  
+  Class:		"data.frame"  
+  Dimensions:	180 obs. of 68 variables  
+  Comments:		Dataframe created by first grouping data 2 by subject and activity, then   
+				calculating the mean for each combination.  
+				There are 30 subjects, that each perform all 6 of the activities,   
+				so this data frame has 180 observations.  
+				The forst 2 columns are the subject and activity, and the remaining  
+				66 columns are the mean() and std() feature measurements from the   
+				supplied dataset.  
+
 				
 				
